@@ -1,0 +1,258 @@
+
+@font-face {
+    font-family: 'AcuminB';
+    src: local('Acumin Pro Bold'), local('AcuminPro-Bold'),
+        url('../fonts/AcuminPro-Bold.woff2') format('woff2'),
+        url('../fonts/AcuminPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+}
+
+@font-face {
+
+    font-family: 'AcuminR';
+    src: local('Acumin Pro'), local('AcuminPro-Regular'),
+        url('../fonts/AcuminPro-Regular.woff2') format('woff2'),
+        url('../fonts/AcuminPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    width: 100%;
+    height: fit-content;
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+
+
+
+.worldnews {
+
+    width: 100%;
+    height: fit-content;
+} 
+
+#main1 {
+
+    width: 58.2%;
+    height: 600px;
+    background-image: url(../img/Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main_cont {
+    width: 600px;
+    height: 247px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: start;
+    align-items: flex-start;
+}
+
+#main_cont hr {
+    width: 600px;
+    border: solid 1px white;
+}
+
+#main_cont a {
+
+    width: 140px;
+    height: 40px;
+    background-color: #fa6980;
+    color: white;
+    border-radius: 6px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+#main2 {
+
+    width: 600px;
+    height: 600px;
+}
+
+#main2_cont {
+
+    width: 380px;
+    height: 400px;
+    margin: 100px auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_title {
+display: flex;
+justify-content: space-between;
+width: 100%;
+padding-bottom: 40PX;
+}
+
+
+
+.r180 {
+    transform: rotate(180deg);
+    margin-right: 43px;   
+    opacity: 40%; 
+}
+
+
+
+.main2_topic {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.main2_topic h4 {
+    color: #fa6980;
+}
+
+.main2_topic p {
+    color: #A6ADB4;
+}
+
+.timestamp{
+    display: block;
+    color: #A6ADB4 !important;
+
+}
+.timestamp::before {
+    content: url(../svg/time.svg);
+    /* background-image: url(/svg/time.svg); */
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+}
+
+.container2 {
+
+    width: 85%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.trending_topic {
+
+    width: 360px;
+    height: 350px;
+}
+
+.trending_topic_text {
+
+    width: 90%;
+    padding: 30px;
+
+}
+
+
+
+.trending_topic_text p, h5 {
+    display: block;
+    width: 100%;
+    word-wrap: wrap;
+    word-break: break-all;
+    padding-bottom: 10px;
+}
+
+.trending_topic_text p {
+    color: #A6ADB4;
+}
+
+.cont_menu {
+    width: 85%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.happening_now1 {
+    width: 760px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.happening_now_topic {
+
+    width: 100%;
+    height: 430px;   
+}
+
+#happening_now_topic1 {
+    background-image: url(../img/happeningnow1.png);
+    background-size: cover;  
+}
+#happening_now_topic2 {
+    background-image: url(../img/happeningnow2.png);
+    background-size: cover;  
+}
+
+.happening_now_topic_content {
+
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 40px;
+    color: white;
+}
+
+.happening_now_topic_text h2, p {
+
+    padding-bottom: 10px;
+    width: 100%;
+   
+}
+
+.happening_now2 {
+    display: flex;
+    flex-direction: column;
+    height: 860px;
+    justify-content: space-between;
+
+}
+
+.happening_now2_topic {
+
+    width: 360px;
+    height: 210px;
+}
+
+.happening_now2_text {
+
+    width: 90%;
+
+
+}
+
+
+
+.happening_now2 p, h5 {
+    display: block;
+    width: 100%;
+    word-wrap: wrap;
+    word-break: break-all;
+    padding-bottom: 10px;
+}
+
+
