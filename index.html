@@ -7,14 +7,18 @@
     <title>Unilab Level 2 Project</title>
     <link rel="stylesheet" href="./css/main.css" >
     <link rel="stylesheet" href="./css/header.css" >
+    <link rel="stylesheet" href="./css/tablet.css" >
+    <link rel="stylesheet" href="./css/mobile.css">
 </head>
 <body>
 
          <!-- Menu Header -->
     <header class="fcs"> 
+       <img id="burger_menu"  src="./svg/filter.svg" alt="">
         <div class="logo"><a href="#">LOGO</a></div>
         <div id="menu" class="fcs" >
-            <ul class="fcs">
+            
+            <ul id="menulist" class="fcs">
                 <li class="menu"><a href="#">HOME</a></li>
                 <li class="menu"><a href="#">DISCOVERY</a></li>
                 <li class="menu"><a href="#">PHOTOS</a></li>
@@ -25,9 +29,75 @@
     </header>
         <!-- Menu Header -->
 
+<div class="pop_up" id="pop_up">
+
+    <div class="pop_up_cont1">
+
+        <a class="pop_up_logo" href="#">logo</a>
+
+        <div class="pop_up_nav">
+
+            <a href=""><img id="back" class="nav_img" src="./svg/home.svg" alt="">   HOME</a>
+            <a href=""><img class="nav_img" src="./svg/discover.svg" alt="">   DISCOVERY</a>
+            <a href=""><img class="nav_img" src="./svg/photos.svg" alt="">   PHOTOS</a>
+            <a href=""><img class="nav_img" src="./svg/mail.svg" alt="">   CONTACT</a>
+            <a href=""><img class="nav_img" src="./svg/profile.png" alt="">   PROFILE</a>
+
+        </div>
+    </div>
+
+    
+
+        <div class="pop_up_foot">
+
+
+            <table class="footer_menu pop_up_foot_menu" >
+    
+                <tr>
+                  
+                  <td><a href="#">about</a></td>
+                  <td><a href="#">testimonials</a></td>
+                  
+                  
+                </tr>
+                  <tr>
+               
+                  
+                  <td><a href="#">help</a></td>
+                  <td><a href="#">advertise</a></td>
+                </tr>
+                  <tr>
+                  
+                  
+                  <td><a href="#">terms</a></td>
+                  <td><a href="#">integrations</a></td>
+                </tr>
+                    <tr>
+              
+                  
+                  <td><a href="#">guidlines</a></td>
+                  <td><a href="#">careers</a></td>
+                </tr>
+              
+              </table>
+
+
+            <div class="grid-container nav_footer_cont">
+
+                <a href="#"><img src="./svg/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="./svg/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="./svg/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="./svg/web.svg" alt="Web"></a>
+                
+                    </div>
+        </div>
+    
+
+</div>
+
         <!-- World news -->
 
-<div class="worldnews fcs">
+<div class="worldnews ">
     <div  id="main1" class="fcs">
 
         <div id="main_cont" class="fcs">
@@ -110,7 +180,7 @@
     <p class="timestamp">2m ago</p>
 </div> </div> </div>
 
-<div class="trending_cont">
+<div id="cont3" class="trending_cont">
 
 <div class="trending_topic">
 
@@ -119,7 +189,22 @@
     <h5>Lorem, ipsum dolor.</h5>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing .</p>
     <p class="timestamp">2m ago</p>
-</div> </div> </div> </div>
+</div> </div> </div> 
+
+<div id="cont4" class="trending_cont">
+
+    <div class="trending_topic">
+    
+    <img src="./img/image4.png" alt="image trending">
+    <div class="trending_topic_text">
+        <h5>Lorem, ipsum dolor.</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing .</p>
+        <p class="timestamp">2m ago</p>
+    </div> </div> </div>
+
+
+
+</div>
 
 <!-- Trending -->
 
@@ -179,7 +264,7 @@
         <p class="timestamp">4h ago by <u>Days</u></p>
     </div> </div> 
 
-    <div class="happening_now2_topic">
+    <div id="happening_now2_topic3" class="happening_now2_topic">
 
         <img src="./img/happeningnowcolmn3.png" alt="image trending">
         <div class="happening_now2_text">
@@ -262,6 +347,6 @@
     </footer>
 
 
-
+    <script src="./js/main.js"></script>
 </body>
 </html>

@@ -7,11 +7,15 @@
     <title>Unilab Level 2 Project</title>
     <link rel="stylesheet" href="./css/header.css" >
     <link rel="stylesheet" href="./css/story.css" >
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+ 
+
 </head>
 <body>
 
          <!-- Menu Header -->
-    <header class="fcs"> 
+    <header class=" story_header_none fcs"> 
         <div class="logo"><a href="#">LOGO</a></div>
         <div id="menu" class="fcs" >
             <ul class="fcs">
@@ -24,7 +28,7 @@
         </div>
     </header>
 
-<div class="story fcs">
+<div class="story story_header_none fcs">
 
     <div class="story_home fcs">
         <a href="./index.html"><img src="./svg/home.svg" alt="Home"></a>
@@ -35,9 +39,16 @@
         <a class="filter" href="#"><img src="./svg/filter.svg" alt="Filter"></a>
 </div>
 
+<div class="story_header_mobile">
+
+    <a href="./index.html"><img src="./svg/Arrow_Back.svg" alt=""></a>
+    <a class="filter" href="#"><img src="./svg/filter.svg" alt="Filter"></a>
+
+
+</div>
 
     <div class="worldnews fcs">
-        <div  id="main1" class="fcs">
+        <div  id="story_main1" class="fcs">
     
             <div id="main_cont" class="fcs">
     <h1>WORLD NEWS</h1>
@@ -66,8 +77,9 @@
             </select>
         </div>
 
-        <label class="label" for="search">Enter the first keywords<input class="search_form gray" type="search" placeholder="Search"></label>
-
+        <div>
+        <p class="label">Enter the first keywords</p> <input class="search_form gray" type="search" placeholder="Search"></label>
+    </div>
         <input class="submit_search" type="submit" value="SEARCH">
                 </form>
 </div> 
@@ -172,6 +184,20 @@
     
     </footer>
 
+    <div></div>
 
+
+        <div class="pagination numbering">
+
+          <a class="active"  href="#">01</a>
+          <a href="#">02</a>
+          <a href="#">03</a>
+          <a href="#">04</a>
+          <a href="#">05</a>
+          <a href="#">06</a>
+          <a href="#">07</a>
+
+        </div>
+    
 </body>
 </html>

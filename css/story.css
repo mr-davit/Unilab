@@ -1,5 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     scroll-behavior: smooth;
     overflow: scroll;
@@ -14,6 +23,10 @@ body {
     
     }
 
+    .story_header_mobile {
+
+        display: none;
+    }
 
 .story_home a {
     font-size: 11px;
@@ -32,12 +45,14 @@ body {
 .worldnews {
 
     width: 85%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: auto;
     padding-top: 40px;
 } 
 
-#main1 {
+#story_main1 {
 
     width: 50%;
     height: 500px;
@@ -50,11 +65,18 @@ body {
     width: 50%;
     height: 190px;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     color: white;
     text-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #main_cont hr {
@@ -77,9 +99,16 @@ body {
     width: 50%;
     height: 50%;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 }
 
@@ -93,11 +122,33 @@ body {
     width: 100%;
     margin: auto;
 }
-.gray {
 
+.gray {
     width: 100%;
-    padding-top: 10px;
-    border: none;
+    padding: 10px;
+    border: solid 1px #A6ADB4 ;
+    border-radius: 6px;
+    opacity: 0.7;
+}
+
+.gray::-webkit-input-placeholder {
+
+    color: #A6ADB4;
+}
+
+.gray::-moz-placeholder {
+
+    color: #A6ADB4;
+}
+
+.gray:-ms-input-placeholder {
+
+    color: #A6ADB4;
+}
+
+.gray::-ms-input-placeholder {
+
+    color: #A6ADB4;
 }
 
 .gray::placeholder {
@@ -112,7 +163,9 @@ body {
     background-color: #fa6980;
     color: white;
     border-radius: 6px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-weight: bold;
     font-size: 11pt;
     border: none;
@@ -130,8 +183,11 @@ body {
 
 .label  {
 
+    font-family: Acuminp;
     font-weight: bold;
     font-size: 13px;
+    padding-bottom: 10px;
+    color: ;
 }
 
 
@@ -152,11 +208,18 @@ body {
 .container2 {
 
     width: 85%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .cont2 {
@@ -164,8 +227,11 @@ body {
     width: 85%;
     margin: auto;  
     padding-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .cont2_1 {
@@ -176,7 +242,9 @@ body {
 
 .column {
     width: 66.5%;
-    column-count: 2;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
 }
 
 .column p {
@@ -215,3 +283,7 @@ body {
 
 }
 
+.numbering {
+
+    display: none;
+}
